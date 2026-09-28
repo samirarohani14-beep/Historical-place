@@ -17,6 +17,232 @@
     >
 </head>
 <body>
-    
+    <section class="properties-section">
+
+     <div class="container">
+
+
+       
+
+        <div class="properties-header">
+
+            <div class="header-text">
+
+                <span class="section-label">
+                    OUR COLLECTION
+                </span>
+
+                <h2>
+                    Exceptional Properties
+                </h2>
+
+                <p>
+                    Click the collection to explore our properties
+                </p>
+
+            </div>
+
+
+            <a href="#" class="view-all">
+                VIEW ALL PROPERTIES
+                <span>↗</span>
+            </a>
+
+        </div>
+
+
+
+       
+
+        <div
+            class="property-stack"
+            id="propertyStack"
+        > 
+
+
+           
+
+        <div class="property-card card-1">
+
+                <div class="property-image">
+
+                    <img
+                        src="images/malanbridge.jpg"
+                        alt="The Westbourne House"
+                    >
+
+
+                    <div class="image-overlay">
+
+                        <div class="property-info">
+
+                            <span>
+                                01
+                            </span>
+
+                            <h3>
+                                The malanbridge
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> 
+
+
+
+         
+
+             <div class="property-card card-2">
+
+                <div class="property-image">
+
+                    <img
+                        src="images/minarets.jpg"
+                        alt="Villa Hellerza"
+                    >
+
+
+                    <div class="image-overlay">
+
+                        <div class="property-info">
+
+                            <span>
+                                02
+                            </span>
+
+                            <h3>
+                                the minarets
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> 
+
+
+
+          
+
+             <div class="property-card card-3">
+
+                <div class="property-image">
+
+                    <img
+                        src="images/mosque.jpg"
+                        alt="The Grange"
+                    >
+
+
+                    <div class="image-overlay">
+
+                        <div class="property-info">
+
+                            <span>
+                                03
+                            </span>
+
+                            <h3>
+                                The mosque
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div> 
+
+
+
+          
+
+             <div class="property-card card-4">
+
+                <div class="property-image">
+
+                    <img
+                        src="images/second catediral.jpg"
+                        alt="Kensington Residence"
+                    >
+
+
+                    <div class="image-overlay">
+
+                        <div class="property-info">
+
+                            <span>
+                                04
+                            </span>
+
+                            <h3>
+                                the catediral
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+ 
+
+
+          
+
+            <button
+                type="button"
+                class="stack-button"
+                id="stackButton"
+                aria-label="Explore properties"
+            >
+
+                <span class="plus">
+                    +
+                </span>
+
+                <span class="explore-text">
+                    EXPLORE
+                </span>
+
+            </button>
+
+
+        </div>
+
+    </div>  
+
+</section>
+
+
+
+
+
+<script>
+
+    const stack =
+        document.getElementById("propertyStack");
+
+    const button =
+        document.getElementById("stackButton");
+
+
+    button.addEventListener("click", function () {
+
+        stack.classList.toggle("open");
+
+    });
+
+</script> 
+
+
 </body>
 </html>
