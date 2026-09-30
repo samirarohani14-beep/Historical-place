@@ -1,0 +1,267 @@
+/* =========================================
+   GENERAL SETTINGS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f3eee2;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    padding: 90px 0;
+}
+
+
+/* =========================================
+   MAIN HERITAGE SECTION
+========================================= */
+
+.heritage-section {
+    width: 94%;
+
+    max-width: 1350px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    /* Four large cards in one row */
+    grid-template-columns: repeat(4, 1fr);
+
+    background-color: #10251c;
+}
+
+
+/* =========================================
+   HISTORICAL PLACE CARD
+========================================= */
+
+.heritage-card {
+    min-height: 390px;
+
+    padding: 38px 34px;
+
+    background-color: #10251c;
+
+    color: white;
+
+    border-right: 1px solid rgba(220, 210, 170, 0.35);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Remove the right border from the last card */
+.heritage-card:nth-child(4) {
+    border-right: none;
+}
+
+
+/* Hover effect */
+.heritage-card:hover {
+    background-color: #173126;
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.number {
+    color: #d8bd73;
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 14px;
+}
+
+
+/* =========================================
+   PLACE ICON
+========================================= */
+
+.place-icon {
+    color: #d8bd73;
+
+    font-size: 48px;
+
+    line-height: 1;
+
+    margin-bottom: 25px;
+
+    font-family: Georgia, serif;
+}
+
+
+/* =========================================
+   PLACE TITLE
+========================================= */
+
+.heritage-card h2 {
+    color: #f5edda;
+
+    font-size: 29px;
+
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.heritage-card p {
+    color: #d0d5cf;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+    max-width: 250px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================================
+   EXPLORE LINK
+========================================= */
+
+.heritage-card a {
+    color: #d8bd73;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    transition: color 0.3s ease;
+}
+
+.heritage-card a:hover {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   BOTTOM AREA
+========================================= */
+
+.heritage-bottom {
+    grid-column: 1 / -1;
+
+    min-height: 285px;
+
+    display: grid;
+
+    grid-template-columns: 1.25fr 0.75fr;
+
+    background-color: #eee5d3;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   MESSAGE AREA
+========================================= */
+
+.heritage-message {
+    display: flex;
+
+    align-items: center;
+
+    padding: 50px 55px;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   QUOTATION MARK
+========================================= */
+
+.quote-mark {
+    color: #17352a;
+
+    font-family: Georgia, serif;
+
+    font-size: 105px;
+
+    line-height: 0.7;
+
+    margin-right: 30px;
+
+    margin-top: -15px;
+}
+
+
+/* =========================================
+   MESSAGE TEXT
+========================================= */
+
+.message-content {
+    max-width: 700px;
+}
+
+
+.message-content p {
+    color: #273d32;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+
+    line-height: 1.5;
+
+    font-weight: 400;
+}
+
+
+/* =========================================
+   SMALL GOLD LINE
+========================================= */
+
+.message-line {
+    width: 55px;
+
+    height: 1px;
+
+    background-color: #b49a5c;
+
+    margin-top: 27px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================
+   SMALL LABEL
+========================================= */
+
+.message-content span {
+    color: #8a7750;
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================
+   IMAGE AREA
+========================================= */
