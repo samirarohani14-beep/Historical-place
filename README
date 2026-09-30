@@ -5,23 +5,37 @@ Lines changed: 32 additions & 0 deletions
 Original file line number	Diff line number	Diff line change
 @@ -0,0 +1,32 @@
 # Heritage Living
-Heritage Living is a responsive website focused on showcasing traditional architecture, heritage properties, and architectural stories.
-## About the Project
-This project is developed as a graduation project to present and preserve the beauty of traditional architecture through a modern web interface.
+
+Heritage Living is a responsive, multi-page website for discovering heritage homes, historic places, and architectural stories.
+
+## Pages
+
+- `index.html` - Home page with the hero carousel, stories, property listings, and restoration sections.
+- `about.html` - About page with the project mission, values, and process.
+- `marjan.html` - Property collection page, styled with `marjan.css`.
+- `shakofa.html` - Heritage places page, styled with `shakofa.css`.
+- `sadiah.html` - Additional page with collection links and footer information.
+
 ## Technologies
-- HTML5
-- CSS3
-- Bootstrap 5
-- Bootstrap Icons
-## Project Sections
-- Header & Hero
-- Categories
-- Architectural Stories
-- Properties
-- Features
-- Testimonials
-- Footer
-## Team
-This project is developed collaboratively by our graduation project team.
-## Responsive Design
-The website is designed to work on desktop, tablet, and mobile screen sizes.
+
+- HTML5 and CSS3
+- Bootstrap 5.3.3 and Bootstrap Icons
+- Google Fonts
+
+Bootstrap, Bootstrap Icons, Google Fonts, and some property photography are loaded from external services, so an internet connection is needed for all styling and images to appear.
+
+## Run Locally
+
+No build step or package installation is required. From this folder, start a local web server:
+
+```powershell
+py -m http.server 8000
+```
+
+Then open <http://localhost:8000/> in a browser. If `py` is unavailable, use `python -m http.server 8000` instead.
+
+## Project Files
+
+- `style.css` - Shared styles for the home, About, and Sadiah pages.
+- `marjan.css` and `shakofa.css` - Page-specific styles.
+- `images/` - Local image assets.
