@@ -1,11 +1,510 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Heritage Homes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css?v=20260930-3" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="brand" href="index.html">
+              <span class="brand-mark">X</span>
+              <span class="brand-text">
+                <strong>HERITAGE</strong>
+                <small>LIVING</small>
+              </span>
+            </a>
+
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#mainNav"
+              aria-controls="mainNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNav">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#stories">Stories</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#properties">Properties</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#restoration">Restoration</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+              </ul>
+
+              <div class="nav-actions">
+                <a class="nav-dots" href="sadiah.html" aria-label="More options"
+                  ><span></span
+                ></a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero-section" id="top">
+          <div class="hero-wrap">
+            <div class="hero-panel">
+              <div class="hero-copy">
+                <div class="hero-kicker">
+                  Historic homes. curated with care.
+                </div>
+                <h1>
+                  Preserving<br /><em>The Past,</em><br />Elevating<br />The
+                  Present
+                </h1>
+                <p class="hero-description">
+                  Discover the timeless beauty of heritage homes—where
+                  architecture, history, and contemporary living come together
+                  for a rare and rewarding lifestyle.
+                </p>
+                <a href="#properties" class="hero-button"
+                  >Explore heritage homes <i class="bi bi-arrow-up-right"></i
+                ></a>
+
+                <div class="hero-metrics">
+                  <div>
+                    <strong>1000+</strong>
+                    <span>Years of History</span>
+                  </div>
+                  <div>
+                    <strong>01</strong>
+                    <span>Timeless City</span>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                id="heroCarousel"
+                class="carousel slide hero-slider"
+                data-bs-ride="carousel"
+                data-bs-interval="4500"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="hero-visual">
+                      <img
+                        src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80"
+                        alt="Historic mansion"
+                      />
+                      <div class="hero-story">
+                        <span class="story-play"
+                          ><i class="bi bi-play-fill"></i
+                        ></span>
+                        <span>Watch the story</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="hero-visual">
+                      <img
+                        src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80"
+                        alt="Heritage staircase"
+                      />
+                      <div class="hero-story">
+                        <span class="story-play"
+                          ><i class="bi bi-play-fill"></i
+                        ></span>
+                        <span>Watch the story</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="hero-visual">
+                      <img
+                        src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=1200&q=80"
+                        alt="Historic corridor"
+                      />
+                      <div class="hero-story">
+                        <span class="story-play"
+                          ><i class="bi bi-play-fill"></i
+                        ></span>
+                        <span>Watch the story</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  class="carousel-control-prev hero-control"
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next hero-control"
+                  type="button"
+                  data-bs-target="#heroCarousel"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="carousel-indicators hero-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#heroCarousel"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="category-band">
+            <div class="pill"><i class="bi bi-house-door" aria-hidden="true"></i><span>Townhouses</span></div>
+            <div class="pill"><i class="bi bi-houses" aria-hidden="true"></i><span>Heritage Villas</span></div>
+            <div class="pill"><i class="bi bi-house" aria-hidden="true"></i><span>Period Homes</span></div>
+            <div class="pill"><i class="bi bi-building" aria-hidden="true"></i><span>Restored Apartments</span></div>
+            <div class="pill"><i class="bi bi-bank" aria-hidden="true"></i><span>Historic Estates</span></div>
+          </div>
+        </section>
+
+        <section class="section-shell story-section" id="stories">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-4">
+              <span class="story-head">Architectural stories</span>
+              <h2 class="story-title">Where History<br />tells a story</h2>
+              <p class="story-copy">
+                From grand facades to intricate moldings, each detail reflects a
+                bygone era and a story worth preserving for today’s discerning
+                buyers.
+              </p>
+              <a href="shakofa.html" class="story-link">Discover the stories</a>
+            </div>
+
+            <div class="col-lg-8">
+              <div class="story-grid">
+                <div class="story-card">
+                  <img
+                    src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80"
+                    alt="Historic interior"
+                  />
+                </div>
+                <div class="story-card">
+                  <img
+                    src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80"
+                    alt="Heritage staircase"
+                  />
+                </div>
+                <div class="story-card">
+                  <img
+                    src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80"
+                    alt="Historical hall"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-shell properties-section" id="properties">
+          <div class="properties-header">
+            <div>
+              <span class="section-label">Featured properties</span>
+              <h3>Exceptional homes</h3>
+            </div>
+            <a class="view-all" href="marjan.html">View all properties</a>
+          </div>
+
+          <div class="cards-grid">
+            <article class="property-card">
+              <div class="property-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=900&q=80"
+                  alt="The Westbourne House"
+                />
+              </div>
+              <div class="property-body">
+                <div class="property-top">
+                  <span class="property-tag">Townhouse</span>
+                  <div class="property-meta">
+                    <i class="bi bi-bed"></i> 3 Beds
+                  </div>
+                </div>
+                <h4 class="property-title">The Westbourne House</h4>
+                <div class="property-info">
+                  <span class="property-price">$3.4M</span>
+                  <a href="marjan.html" class="property-link">View details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="property-card">
+              <div class="property-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=900&q=80"
+                  alt="Villa Bellezza"
+                />
+              </div>
+              <div class="property-body">
+                <div class="property-top">
+                  <span class="property-tag">Heritage villa</span>
+                  <div class="property-meta">
+                    <i class="bi bi-bed"></i> 4 Beds
+                  </div>
+                </div>
+                <h4 class="property-title">Villa Bellezza</h4>
+                <div class="property-info">
+                  <span class="property-price">$4.3M</span>
+                  <a href="marjan.html" class="property-link">View details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="property-card">
+              <div class="property-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80"
+                  alt="The Grange"
+                />
+              </div>
+              <div class="property-body">
+                <div class="property-top">
+                  <span class="property-tag">Period home</span>
+                  <div class="property-meta">
+                    <i class="bi bi-bed"></i> 5 Beds
+                  </div>
+                </div>
+                <h4 class="property-title">The Grange</h4>
+                <div class="property-info">
+                  <span class="property-price">$5.8M</span>
+                  <a href="marjan.html" class="property-link">View details</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="property-card">
+              <div class="property-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=900&q=80"
+                  alt="The Kensington Residence"
+                />
+              </div>
+              <div class="property-body">
+                <div class="property-top">
+                  <span class="property-tag">Restored apartment</span>
+                  <div class="property-meta">
+                    <i class="bi bi-bed"></i> 3 Beds
+                  </div>
+                </div>
+                <h4 class="property-title">The Kensington Residence</h4>
+                <div class="property-info">
+                  <span class="property-price">$2.9M</span>
+                  <a href="marjan.html" class="property-link">View details</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section-shell" id="restoration">
+          <div class="feature-band">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="bi bi-house-door-fill"></i>
+              </div>
+              <h4>Restoration excellence</h4>
+              <p>
+                Preserving original features while enhancing comfort and light
+                in every carefully curated residence.
+              </p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="bi bi-map"></i></div>
+              <h4>Neighborhood history</h4>
+              <p>
+                Explore the rich cultural stories and architectural character
+                woven through our most sought-after districts.
+              </p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"><i class="bi bi-lightbulb"></i></div>
+              <h4>Expert insights</h4>
+              <p>
+                Guidance on restoring, maintaining, and investing in
+                historically significant homes with confidence.
+              </p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="bi bi-collection-fill"></i>
+              </div>
+              <h4>Curated collections</h4>
+              <p>
+                Handpicked homes of architectural merit and enduring value
+                across prime historic neighborhoods.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-shell quote-block" id="about">
+          <div class="quote-inner">
+            <div class="quote-copy">
+              <div class="quote-mark">“</div>
+              <p>
+                Heritage living guided us to a home with a soul and a story.
+                Their knowledge, passion, and attention to detail are unmatched.
+              </p>
+              <div class="quote-foot">
+                <span class="quote-rule"></span>
+                <span>Client story</span>
+              </div>
+            </div>
+
+            <div class="quote-image">
+              <img
+                src="https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=900&q=80"
+                alt="Historic corridor"
+              />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="footer-shell">
+          <div class="footer-top">
+            <div class="footer-newsletter">
+              <label>Stay inspired</label>
+              <div class="news-form">
+                <input
+                  type="email"
+                  placeholder="Your email address"
+                  aria-label="Your email address"
+                />
+                <button type="button">Subscribe</button>
+              </div>
+            </div>
+            <div class="socials">
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-linkedin"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-main">
+            <div>
+              <div class="brand-footer">
+                <span class="brand-mark">X</span>
+                <span class="brand-text">
+                  <strong>HERITAGE</strong>
+                  <small>LIVING</small>
+                </span>
+              </div>
+              <p>
+                Curated heritage homes and private residences for buyers seeking
+                timeless value and distinctive character.
+              </p>
+            </div>
+
+            <div>
+              <h5>Properties</h5>
+              <ul>
+                <li><a href="#">Townhouses</a></li>
+                <li><a href="#">Heritage Villas</a></li>
+                <li><a href="#">Period Homes</a></li>
+                <li><a href="#">Restored Apartments</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h5>Company</h5>
+              <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Approach</a></li>
+                <li><a href="#">Journal</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h5>Resources</h5>
+              <ul>
+                <li><a href="#">Guides</a></li>
+                <li><a href="#">Buyer FAQ</a></li>
+                <li><a href="#">Market Updates</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h5>Contact</h5>
+              <ul>
+                <li>+44 (0)20 7946 3956</li>
+                <li>hello@heritageliving.com</li>
+                <li>12 Albert Terrace</li>
+                <li>London SW1X 7AB</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-swipe">Swipe up to explore</div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
